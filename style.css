@@ -10,9 +10,10 @@ svg {
   z-index: 0;
   position: absolute;
   background-color: white;
+  top: -2px;
 }
 
-div {
+#teste {
   width: 100%;
   height: 50px;
   z-index: 1;
@@ -50,4 +51,40 @@ header h1 {
 header h1:last-child {
   bottom: -230px;
   color: #fa036b;
+}
+
+img {
+  position: relative;
+  width: 400px;
+}
+
+img[data-src] {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+img[src] {
+  opacity: 1;
+  transition: 1.5s;
+  transform: translateX(25%);
+}
+
+#img {
+  margin-top: 400px;
+  mask-image: url(./resources/preview.png);
+  mask-position: 45px -4px;
+  mask-size: 450px;
+  background-color: #644978;
+  mask-repeat: no-repeat;
+  opacity: 0;
+  /* left: -100px; */
+  transform: translateX(-100%);
+}
+
+#img.viewed {
+  opacity: 1;
+  transition: 1s;
+  /* left: 0px; */
+  transform: translateX(0px);
+  margin-left: 5vmax;
 }
