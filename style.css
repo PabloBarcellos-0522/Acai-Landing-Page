@@ -4,7 +4,26 @@
   font-family: "Roboto Condensed", sans-serif;
 }
 
-svg {
+body {
+  background-color: #644978;
+}
+
+body svg {
+  width: 100%;
+  height: 120px;
+  fill: white;
+}
+
+#apresentation {
+  background-color: white;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section svg {
   fill: #6e1c66;
   transform: rotate(180deg);
   z-index: 0;
@@ -22,12 +41,15 @@ svg {
 }
 
 section {
-  margin-top: 1000px;
+  /* margin-top: 500px; */
   width: 100%;
-  height: 1500px;
+  /* height: 1500px; */
+  height: 3500px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  gap: 500px;
 }
 
 section:last-of-type {
@@ -42,7 +64,7 @@ section:last-of-type {
 
 header {
   width: 100%;
-  height: 500px;
+  height: 300px;
   background-color: #fa036b;
   display: flex;
   flex-direction: column;
@@ -61,6 +83,15 @@ header h1 {
 header h1:last-child {
   bottom: -230px;
   color: #fa036b;
+}
+
+header h1:last-child:hover {
+  bottom: -230px;
+  color: #fa036b;
+
+  text-shadow: 0px 0px 50px rgb(114, 114, 114);
+  transition: 0.5s;
+  font-size: 200px;
 }
 
 img {
@@ -119,13 +150,40 @@ ul {
 
 li {
   opacity: 0;
+  margin-left: 400px;
 }
 
-.active {
-  font-size: 100px;
+.viewport {
+  /* opacity: 0; */
+  visibility: hidden;
+  font-size: 30px;
+  font-weight: 800;
+  display: block;
+  transition: 1s;
+  text-align: center;
+  color: white;
+}
+
+/* .active {
+  font-size: 30px;
   font-weight: 800;
   display: block;
   opacity: 1;
-  transition: 1.5s;
+  visibility: visible;
+  transition: 1s;
   text-align: center;
+  margin-bottom: 300px;
+} */
+
+h1:nth-child(2) {
+  color: #fa036b;
+  transition: 0.5s;
+}
+
+h1:nth-child(2):hover {
+  color: #fa036ab1;
+  /* box-shadow: 60px -16px teal; */
+  text-shadow: 0px 0px 30px black;
+  transition: 0.5s;
+  font-size: 100px;
 }
