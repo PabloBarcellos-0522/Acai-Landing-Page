@@ -46,7 +46,9 @@ window.addEventListener("scroll", ativaNoScroll)
 window.sr = ScrollReveal() // { reset: true }
 
 sr.reveal(".viewport", {
-  duration: 1000,
+  duration: 1500,
   // rotate: { x: 0, y: 0, z: 50 },
   distance: "300px",
+  easing: "cubic-bezier(0.66, 0.01, 0.38, 1)",
+  opacity: 0,
 })
