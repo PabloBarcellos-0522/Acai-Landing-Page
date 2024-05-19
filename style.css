@@ -50,6 +50,7 @@ section {
   justify-content: center;
   flex-direction: column;
   gap: 350px;
+  position: relative;
 }
 
 section:last-of-type {
@@ -165,13 +166,12 @@ li {
 
   display: flex;
   gap: 100px;
+  z-index: 1;
 }
 
 img {
   /* border-radius: 50px; */
-  mask-image: url(./resources/preview.png);
-  mask-repeat: no-repeat;
-  mask-size: contain;
+
   width: 600px;
   height: 600px;
 
@@ -207,4 +207,8 @@ h1:nth-child(2):hover {
   text-shadow: 0px 0px 30px black;
   transition: 0.5s;
   font-size: 100px;
+}
+
+canvas {
+  position: absolute;
 }
